@@ -1,0 +1,43 @@
+.cardContainer {
+  display: flex;
+  position: relative;
+  height: calc(100vh - 16px);
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  border: 3px #a0a0a0 solid;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin: 8px;
+}
+
+.cardCorners {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardCorners > div {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px;
+}
+
+.N, .S {
+  display: flex;
+  justify-content: space-between;
+}
+
+.S {
+  transform: rotate(180deg)
+}
+
+.cardValue {
+  font-size: 180px;
+  font-weight: bold;
+}
