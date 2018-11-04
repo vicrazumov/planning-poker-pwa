@@ -1,15 +1,12 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 
-import CardList from './CardList/CardList';
+import CardList from './CardList/CardList'
 
-const App = () => {
+const App = () => (
+  <div className="app">
+    <CardList />
+  </div>
+)
 
-  return (
-    <div className="app">
-      <CardList />
-    </div>
-  );
-}
-
-export default App;
+export default App

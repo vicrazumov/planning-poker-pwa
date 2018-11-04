@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 
 import './Pagination.css'
 
@@ -12,11 +13,13 @@ const Pagination = ({ hidden, cards, onIndexChange, activeIndex }) => {
 
   useEffect(() => {
     setActive(true)
+
     clearTimeout(activeTimer)
     activeTimer = setTimeout(() => {
       setActive(false)
       activeTimer = null
     }, ACTIVE_TIMEOUT)
+
   }, [activeIndex])
 
   return (
@@ -36,4 +39,11 @@ const Pagination = ({ hidden, cards, onIndexChange, activeIndex }) => {
   );
 }
 
-export default Pagination;
+Pagination.propTypes = {
+  hidden: PropTypes.bool,
+  cards: PropTypes.arrayOf(PropTypes.shape({ value: PropTypes.string.isRequired })),
+  onIndexChange: PropTypes.func.isRequired,
+  activeIndex: PropTypes.number.isRequired,
+}
+
+export default Pagination

@@ -1,0 +1,15 @@
+export default [
+  { value: '0', image: '' },
+  { value: '0.5', image: '' },
+  { value: '1', image: '' },
+  { value: '2', image: '' },
+  { value: '3', image: '' },
+  { value: '5', image: '' },
+  { value: '8', image: '' },
+  { value: '13', image: '' },
+  { value: '20', image: '' },
+  { value: '40', image: '' },
+  { value: '100', image: '' },
+  { value: '?', image: '' },
+  { value: '☕️', image: '' },
+]
