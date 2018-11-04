@@ -6,7 +6,7 @@ import './Pagination.css'
 let activeTimer = null
 const ACTIVE_TIMEOUT = 2000
 
-const Pagination = ({ hidden, cards, onIndexChange, activeIndex }) => {
+const Pagination = ({ hidden, cards, onIndexChange, activeIndex, data }) => {
   const [active, setActive] = useState(true)
 
   const visible = active && !hidden
@@ -20,7 +20,7 @@ const Pagination = ({ hidden, cards, onIndexChange, activeIndex }) => {
       activeTimer = null
     }, ACTIVE_TIMEOUT)
 
-  }, [activeIndex])
+  }, [activeIndex, data])
 
   return (
     <div
@@ -44,6 +44,7 @@ Pagination.propTypes = {
   cards: PropTypes.arrayOf(PropTypes.shape({ value: PropTypes.string.isRequired })),
   onIndexChange: PropTypes.func.isRequired,
   activeIndex: PropTypes.number.isRequired,
+  data: PropTypes.any,
 }
 
 export default Pagination

@@ -100,6 +100,7 @@ const CardList = ({ onIndexChange }) => {
         cards={CARDS}
         onIndexChange={handleIndexChange}
         activeIndex={index}
+        data={transformX}
       />
     </>
   )
