@@ -91,7 +91,15 @@ const CardList = ({ onIndexChange }) => {
       >
         {
           CARDS.map((card, idx) => (
-            <Card hidden={index === idx && hidden} key={`card-${idx}`} value={card.value} image={card.image} />
+            <Card
+              hidden={index === idx && hidden}
+              key={`card-${idx}`}
+              value={card.value}
+              image={card.image}
+              color={card.color}
+              tintColor={card.tintColor}
+              hideValue={card.hideValue}
+            />
           ))
         }
       </div>

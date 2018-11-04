@@ -3,20 +3,25 @@ import PropTypes from 'prop-types'
 
 import './Card.css'
 
-const Card = ({ value, image, hidden }) => (
+const Card = ({ value, image, hidden, color, tintColor, hideValue }) => (
   <div className={hidden ? 'cardContainer hidden' : 'cardContainer'}>
     <div className="flipper">
-      <div className="front">
-        <div className="cardCorners">
-          <div className="NW">{value}</div>
-          <div className="NE">{value}</div>
-        </div>
-        <div className="cardValue">
-          {value}
-        </div>
-        <div className="cardCorners">
-          <div className="SW">{value}</div>
-          <div className="SE">{value}</div>
+      <div className="front" style={{'backgroundImage': `url(${image})`}}>
+        <div className="tint" style={{ backgroundColor: tintColor }}>
+          <div className="cardCorners">
+            <div className="NW" style={{ color }}>{value}</div>
+            <div className="NE" style={{ color }}>{value}</div>
+          </div>
+          {
+            !hideValue &&
+            <div className="cardValue" style={{ color }}>
+              {value}
+            </div>
+          }
+          <div className="cardCorners">
+            <div className="SW" style={{ color }}>{value}</div>
+            <div className="SE" style={{ color }}>{value}</div>
+          </div>
         </div>
       </div>
       <div className="back">
@@ -30,6 +35,9 @@ Card.propTypes = {
   value: PropTypes.string.isRequired,
   image: PropTypes.string,
   hidden: PropTypes.bool,
+  color: PropTypes.string,
+  tintColor: PropTypes.string,
+  hideValue: PropTypes.bool,
 }
 
 export default Card

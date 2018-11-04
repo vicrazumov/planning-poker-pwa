@@ -31,13 +31,23 @@
 }
 
 .front {
+  background-color: white;
+  transition: 1000ms ease-in-out;
+  z-index: 2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tint {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  background-color: white;
-  transition: 1000ms ease-in-out;
-  z-index: 2;
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+  background: rgba(0,0,0,0.5)
 }
 
 .cardCorners {
