@@ -76,7 +76,18 @@ const CardList = ({ onIndexChange }) => {
   }
 
   return (
-    <>
+    <div
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      onTouchMove={handleTouchMove}
+    >
+      <Pagination
+        hidden={hidden}
+        cards={CARDS}
+        onIndexChange={handleIndexChange}
+        activeIndex={index}
+        data={transformX}
+      />
       <div
         className="cardList"
         style={{
@@ -84,9 +95,6 @@ const CardList = ({ onIndexChange }) => {
           transform: `translateX(${transformX}px)`,
           transition: `transform ease-in-out ${transitionTiming}ms`
         }}
-        onTouchStart={handleTouchStart}
-        onTouchEnd={handleTouchEnd}
-        onTouchMove={handleTouchMove}
         onClick={() => setHidden(!hidden)}
       >
         {
@@ -103,14 +111,7 @@ const CardList = ({ onIndexChange }) => {
           ))
         }
       </div>
-      <Pagination
-        hidden={hidden}
-        cards={CARDS}
-        onIndexChange={handleIndexChange}
-        activeIndex={index}
-        data={transformX}
-      />
-    </>
+    </div>
   )
 }
 

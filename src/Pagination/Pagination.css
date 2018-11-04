@@ -6,6 +6,7 @@
   justify-content: center;
   flex-wrap: wrap;
   transition: opacity 500ms;
+  z-index: 9;
 }
 
 .pagination.hidden {
@@ -17,9 +18,8 @@
   width: 32px;
   height: 48px;
   border-radius: 6px;
-  background: transparent;
+  background: rgba(255,255,255,0.5);
   border-color: rgba(200,200,200,0.3);
-  color: silver;
   font-size: 16px;
   margin: 0 8px 16px 8px;
 }

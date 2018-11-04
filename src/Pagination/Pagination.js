@@ -25,6 +25,7 @@ const Pagination = ({ hidden, cards, onIndexChange, activeIndex, data }) => {
   return (
     <div
       className={`pagination ${visible ? '' : 'hidden'}`}
+      style={hidden ? { zIndex: 0 } : {}}
     >
       {
         cards.map((card, idx) => (
