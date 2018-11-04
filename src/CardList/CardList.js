@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import './CardList.css'
 import Card from '../Card/Card'
+import Pagination from '../Pagination/Pagination'
 
 const CARDS = [
   { value: 0, image: '' },
@@ -26,25 +27,32 @@ const INDEX_CHANGE_THRESHOLD = 0.15 // relative to the screen width
 const FAST_FORWARD_THRESHOLD_MS = 400
 const FAST_FORWARD_THRESHOLD = 0.5 // relative to the screen width
 const INCREASED_MULTIPLIER = 3
+const DEFAULT_TRANSITION_TIMING = 300
 
 let clientX = null
 let startX = null
 let startTime = null
+let transitionTiming = DEFAULT_TRANSITION_TIMING
 
 const CardList = ({ onIndexChange }) => {
   const [transformX, setTransformX] = useState(0)
   const setTransformInAF = value => requestAnimationFrame(() => setTransformX(value))
   const [index, setIndex] = useState(0)
+  const [hidden, setHidden] = useState(false)
 
   const handleTouchStart = event => {
+    if (hidden) return
+
     const { touches: [{ clientX: _clientX }] } = event
     startX = _clientX
     startTime = new Date().getTime()
   }
 
   const handleTouchEnd = event => {
+    if (hidden) return
 
-    const relativeTransform = (transformX + clientX - startX) / SCREEN_WIDTH
+    const relativeTransform = (transformX + clientX) / SCREEN_WIDTH
+
     let newIndex = index
 
     if (relativeTransform >= INDEX_CHANGE_THRESHOLD) {
@@ -53,7 +61,34 @@ const CardList = ({ onIndexChange }) => {
       newIndex += Math.max(Math.round(-relativeTransform), 1)
     }
 
+    handleIndexChange(newIndex)
+    transitionTiming = DEFAULT_TRANSITION_TIMING
+  }
+
+  const handleTouchMove = event => {
+    if (hidden) return
+
+    const { touches: [{ clientX: _clientX }] } = event
+
+    const offset = _clientX - startX
+
+    const moveTime = new Date().getTime() - startTime
+    let multiplier = 2
+    if (moveTime > FAST_FORWARD_THRESHOLD_MS && Math.abs(offset / SCREEN_WIDTH) > FAST_FORWARD_THRESHOLD)
+      multiplier = INCREASED_MULTIPLIER
+
+    const newOffset = offset * multiplier - clientX
+
+    if (newOffset > 0 || newOffset < MAX_TRANSFORM) return
+
+    setTransformInAF(newOffset)
+  }
+
+  const handleIndexChange = newIndex => {
+    if (hidden) return
+
     clientX = newIndex * SCREEN_WIDTH
+    transitionTiming = Math.abs((newIndex - index)) * 100
 
     setIndex(newIndex)
     setTransformInAF(-clientX)
@@ -61,37 +96,33 @@ const CardList = ({ onIndexChange }) => {
     if (onIndexChange && newIndex !== index) onIndexChange(newIndex)
   }
 
-  const handleTouchMove = event => {
-    const { touches: [{ clientX: _clientX }] } = event
-
-    const offset = _clientX - startX
-
-    const moveTime = new Date().getTime() - startTime
-    let multiplier = 1
-    if (moveTime > FAST_FORWARD_THRESHOLD_MS && Math.abs(offset / SCREEN_WIDTH) > FAST_FORWARD_THRESHOLD)
-      multiplier = INCREASED_MULTIPLIER
-
-    const newOffset = -clientX + offset * multiplier
-
-    if (newOffset > 0 || newOffset < MAX_TRANSFORM) return
-
-    setTransformInAF(newOffset)
-  }
-
   return (
-    <div
-      className="cardList"
-      style={{ width: `${LIST_WIDTH}px`, transform: `translateX(${transformX}px)` }}
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
-      onTouchMove={handleTouchMove}
-    >
-      {
-        CARDS.map((card, idx) => (
-          <Card key={`card-${idx}`} value={card.value} image={card.image} />
-        ))
-      }
-    </div>
+    <>
+      <div
+        className="cardList"
+        style={{
+          width: `${LIST_WIDTH}px`,
+          transform: `translateX(${transformX}px)`,
+          transition: `transform ease-in-out ${transitionTiming}ms`
+        }}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+        onTouchMove={handleTouchMove}
+        onClick={() => setHidden(!hidden)}
+      >
+        {
+          CARDS.map((card, idx) => (
+            <Card hidden={index === idx && hidden} key={`card-${idx}`} value={card.value} image={card.image} />
+          ))
+        }
+      </div>
+      <Pagination
+        hidden={hidden}
+        cards={CARDS}
+        onIndexChange={handleIndexChange}
+        activeIndex={index}
+      />
+    </>
   )
 }
 

@@ -1,0 +1,33 @@
+.pagination {
+  position: absolute;
+  bottom: 64px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: opacity 500ms;
+}
+
+.pagination.hidden {
+  opacity: 0;
+}
+
+.paginationButton {
+  padding: 0px;
+  width: 32px;
+  height: 48px;
+  border-radius: 6px;
+  background: transparent;
+  border-color: rgba(200,200,200,0.3);
+  color: silver;
+  font-size: 16px;
+  margin: 0 8px 16px 8px;
+}
+
+.paginationButton.active {
+  background: #FEAC5E;
+  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  color: white;
+  font-weight: bold;
+}

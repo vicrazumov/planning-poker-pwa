@@ -1,14 +1,21 @@
 .cardContainer {
   display: flex;
   position: relative;
-  height: calc(100vh - 16px);
-  width: 100vw;
+  height: calc(100vh - 32px);
+  width: calc(100vw - 32px);
   align-items: center;
   justify-content: center;
-  border: 3px #a0a0a0 solid;
   box-sizing: border-box;
-  border-radius: 12px;
-  margin: 8px;
+  border-radius: 16px;
+  margin: 16px;
+  background-color: white;
+  transition: 1000ms ease-in-out;
+  box-shadow: 1px 1px 4px grey;
+  backface-visibility: hidden;
+}
+
+.cardContainer.hidden {
+  transform: rotateY(180deg);
 }
 
 .cardCorners {

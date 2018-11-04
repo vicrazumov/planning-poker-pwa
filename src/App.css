@@ -1,4 +1,20 @@
 .app {
   width: 100vw;
-  height: 100vh;  
+  height: 100vh;
+  background: #43cea2;
+  background: -webkit-linear-gradient(to left, #43cea2, #185a9d);
+  background: linear-gradient(to left, #43cea2, #185a9d);
+}
+
+.creditsContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
 }

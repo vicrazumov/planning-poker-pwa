@@ -1,5 +1,4 @@
 .cardList {
   display: flex;
   overflow-y: hidden;
-  transition: transform 300ms;
 }
