@@ -1,50 +1,90 @@
 .cardContainer {
-  display: flex;
-  position: relative;
   height: calc(100vh - 32px);
   width: calc(100vw - 32px);
-  align-items: center;
-  justify-content: center;
   box-sizing: border-box;
-  border-radius: 16px;
   margin: 16px;
-  background-color: white;
-  transition: 1000ms ease-in-out;
-  box-shadow: 1px 1px 4px grey;
-  backface-visibility: hidden;
+  perspective: 3000;
 }
 
-.cardContainer.hidden {
+.cardContainer.hidden .flipper {
   transform: rotateY(180deg);
 }
 
-.cardCorners {
+.flipper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: 1000ms;
+  transform-style: preserve-3d;
+  box-shadow: 1px 1px 4px grey;
+  border-radius: 16px;
+}
+
+.front, .back {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 16px;
   height: 100%;
   width: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-direction: column;
+  background-color: white;
+  transition: 1000ms ease-in-out;
+  z-index: 2;
+}
+
+.cardCorners {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
 }
 
 .cardCorners > div {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: bold;
   padding: 16px;
 }
 
-.N, .S {
-  display: flex;
-  justify-content: space-between;
-}
-
-.S {
+.SW, .SE {
   transform: rotate(180deg)
 }
 
 .cardValue {
   font-size: 180px;
   font-weight: bold;
+}
+
+.back {
+  transform: rotateY(180deg);
+  /* gradient pattern is taken from here: https://leaverou.github.io/css3patterns/#zig-zag */
+	background:linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
+  linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
+  linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+  linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
+  background-size: 100px 100px;
+  background-color: #EC173A;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.credits {
+  padding: 16px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border-radius: 8px;
+  font-weight: lighter;
+  margin-bottom: 16px;
+}
+
+.credits > a {
+  color: white;
+  text-decoration: none;
 }

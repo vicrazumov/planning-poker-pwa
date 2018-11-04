@@ -5,18 +5,23 @@ import './Card.css'
 
 const Card = ({ value, image, hidden }) => (
   <div className={hidden ? 'cardContainer hidden' : 'cardContainer'}>
-    <div className="cardCorners">
-      <div className="N">
-        <div className="NW">{value}</div>
-        <div className="NE">{value}</div>
+    <div className="flipper">
+      <div className="front">
+        <div className="cardCorners">
+          <div className="NW">{value}</div>
+          <div className="NE">{value}</div>
+        </div>
+        <div className="cardValue">
+          {value}
+        </div>
+        <div className="cardCorners">
+          <div className="SW">{value}</div>
+          <div className="SE">{value}</div>
+        </div>
       </div>
-      <div className="S">
-        <div className="SW">{value}</div>
-        <div className="SE">{value}</div>
+      <div className="back">
+        <div className="credits">Planning Poker PWA by <a href="https://twitter.com/vicrazumov">@vicrazumov</a></div>
       </div>
-    </div>
-    <div className="cardValue">
-      {value}
     </div>
   </div>
 )
