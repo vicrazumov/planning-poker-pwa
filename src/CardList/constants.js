@@ -1,23 +1,10 @@
 import CARDS from './Cards'
 
-const SCREEN_WIDTH = window.innerWidth
-const LIST_WIDTH = CARDS.length * SCREEN_WIDTH
-const MAX_TRANSFORM = -(CARDS.length - 1) * SCREEN_WIDTH
-const INDEX_CHANGE_THRESHOLD = 0.15 // relative to the screen width
-const FAST_FORWARD_THRESHOLD_MS = 400
-const FAST_FORWARD_THRESHOLD = 0.5 // relative to the screen width
-const INCREASED_MULTIPLIER = 3
-const DEFAULT_TRANSITION_TIMING = 300
-const MULTIPLE_CARDS_TRANSITION_TIMING = 100
-
-export default {
-  SCREEN_WIDTH,
-  LIST_WIDTH,
-  MAX_TRANSFORM,
-  INDEX_CHANGE_THRESHOLD,
-  FAST_FORWARD_THRESHOLD,
-  FAST_FORWARD_THRESHOLD_MS,
-  INCREASED_MULTIPLIER,
-  DEFAULT_TRANSITION_TIMING,
-  MULTIPLE_CARDS_TRANSITION_TIMING,
-}
+export const SCREEN_WIDTH = window.innerWidth
+export const LIST_WIDTH = CARDS.length * SCREEN_WIDTH
+export const MAX_TRANSFORM = -(CARDS.length - 1) * SCREEN_WIDTH
+export const INDEX_CHANGE_THRESHOLD = 0.5 // relative to the screen width
+export const DEFAULT_TRANSITION_TIMING = 0
+export const MULTIPLE_CARDS_TRANSITION_TIMING = 100
+export const ONE_CARD_TRANSITION_TIMING = 200
+export const FAST_SWIPE_THRESHOLD = 150 // ms

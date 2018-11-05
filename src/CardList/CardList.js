@@ -6,16 +6,28 @@ import Card from '../Card/Card'
 import Pagination from '../Pagination/Pagination'
 
 import CARDS from './Cards'
-import CONSTANTS from './constants'
+import {
+  DEFAULT_TRANSITION_TIMING,
+  SCREEN_WIDTH,
+  INDEX_CHANGE_THRESHOLD,
+  MAX_TRANSFORM,
+  ONE_CARD_TRANSITION_TIMING,
+  MULTIPLE_CARDS_TRANSITION_TIMING,
+  LIST_WIDTH,
+  FAST_SWIPE_THRESHOLD,
+} from './constants'
 
 let clientX = null
 let startX = null
 let startTime = null
-let transitionTiming = CONSTANTS.DEFAULT_TRANSITION_TIMING
 
 const CardList = ({ onIndexChange }) => {
   const [transformX, setTransformX] = useState(0)
-  const setTransformInAF = value => requestAnimationFrame(() => setTransformX(value))
+  const [transitionTiming, setTransitionTiming] = useState(DEFAULT_TRANSITION_TIMING)
+  const scroll = (value, delay) => {
+    setTransformX(value)
+    setTransitionTiming(delay)
+  }
   const [index, setIndex] = useState(0)
   const [hidden, setHidden] = useState(false)
 
@@ -30,47 +42,45 @@ const CardList = ({ onIndexChange }) => {
   const handleTouchEnd = event => {
     if (hidden) return
 
-    const relativeTransform = (transformX + clientX) / CONSTANTS.SCREEN_WIDTH
+    const relativeTransform = (transformX + clientX) / SCREEN_WIDTH
 
     let newIndex = index
 
-    if (relativeTransform >= CONSTANTS.INDEX_CHANGE_THRESHOLD) {
-      newIndex += Math.min(Math.round(-relativeTransform), -1)
-    } else if (relativeTransform <= -CONSTANTS.INDEX_CHANGE_THRESHOLD) {
-      newIndex += Math.max(Math.round(-relativeTransform), 1)
+    const moveTime = new Date().getTime() - startTime
+
+    if (moveTime <= FAST_SWIPE_THRESHOLD || Math.abs(relativeTransform) >= INDEX_CHANGE_THRESHOLD) {
+      if (relativeTransform > 0) {
+        newIndex += Math.min(Math.round(-relativeTransform), -1)
+      } else if (relativeTransform < 0) {
+        newIndex += Math.max(Math.round(-relativeTransform), 1)
+      }
     }
 
     handleIndexChange(newIndex)
-    transitionTiming = CONSTANTS.DEFAULT_TRANSITION_TIMING
   }
 
   const handleTouchMove = event => {
     if (hidden) return
 
     const { touches: [{ clientX: _clientX }] } = event
-
     const offset = _clientX - startX
+    const newOffset = offset - clientX
 
-    const moveTime = new Date().getTime() - startTime
-    let multiplier = 2
-    if (moveTime > CONSTANTS.FAST_FORWARD_THRESHOLD_MS && Math.abs(offset / CONSTANTS.SCREEN_WIDTH) > CONSTANTS.FAST_FORWARD_THRESHOLD)
-      multiplier = CONSTANTS.INCREASED_MULTIPLIER
+    if (newOffset > 0 || newOffset < MAX_TRANSFORM) return
 
-    const newOffset = offset * multiplier - clientX
-
-    if (newOffset > 0 || newOffset < CONSTANTS.MAX_TRANSFORM) return
-
-    setTransformInAF(newOffset)
+    scroll(newOffset, DEFAULT_TRANSITION_TIMING)
   }
 
   const handleIndexChange = newIndex => {
     if (hidden) return
 
-    clientX = newIndex * CONSTANTS.SCREEN_WIDTH
-    transitionTiming = Math.abs((newIndex - index)) * CONSTANTS.MULTIPLE_CARDS_TRANSITION_TIMING
+    clientX = newIndex * SCREEN_WIDTH
+
+    const diff = Math.abs(newIndex - index)
+    const delay = diff > 1 ? diff * MULTIPLE_CARDS_TRANSITION_TIMING : ONE_CARD_TRANSITION_TIMING
 
     setIndex(newIndex)
-    setTransformInAF(-clientX)
+    scroll(-clientX, delay)
 
     if (onIndexChange && newIndex !== index) onIndexChange(newIndex)
   }
@@ -91,7 +101,7 @@ const CardList = ({ onIndexChange }) => {
       <div
         className="cardList"
         style={{
-          width: `${CONSTANTS.LIST_WIDTH}px`,
+          width: `${LIST_WIDTH}px`,
           transform: `translateX(${transformX}px)`,
           transition: `transform ease-in-out ${transitionTiming}ms`
         }}
