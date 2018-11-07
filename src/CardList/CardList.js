@@ -39,7 +39,7 @@ const CardList = ({ onIndexChange }) => {
     startTime = new Date().getTime()
   }
 
-  const handleTouchEnd = event => {
+  const handleTouchEnd = () => {
     if (hidden) return
 
     const relativeTransform = (transformX + clientX) / SCREEN_WIDTH

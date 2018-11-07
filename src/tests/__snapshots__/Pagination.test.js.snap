@@ -1,0 +1,2349 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination renders correctly when empty 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__unrendered__): <Pagination
+    activeIndex={0}
+    onIndexChange={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "activeIndex": 0,
+      "onIndexChange": [Function],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": <div
+        class="pagination "
+      />,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [],
+        "className": "pagination ",
+        "style": Object {},
+      },
+      "ref": null,
+      "rendered": Array [
+        Array [],
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "activeIndex": 0,
+        "onIndexChange": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <div
+          class="pagination "
+        />,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [],
+          "className": "pagination ",
+          "style": Object {},
+        },
+        "ref": null,
+        "rendered": Array [
+          Array [],
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Pagination renders correctly when hidden 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__unrendered__): <Pagination
+    activeIndex={0}
+    cards={
+      Array [
+        Object {
+          "color": "rgb(134, 168, 178)",
+          "image": "/images/zero.jpg",
+          "tintColor": "rgba(0,0,0,0.05)",
+          "value": "0",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.6)",
+          "image": "/images/half.jpg",
+          "value": "0.5",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.6)",
+          "image": "/images/one.jpg",
+          "tintColor": "rgba(0,0,0,0.2)",
+          "value": "1",
+        },
+        Object {
+          "hideValue": true,
+          "image": "/images/two.jpg",
+          "tintColor": "rgba(0,0,0,0)",
+          "value": "2",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.5)",
+          "hideValue": true,
+          "image": "/images/three.jpg",
+          "tintColor": "rgba(0,0,0,0.35)",
+          "value": "3",
+        },
+        Object {
+          "color": "rgba(0,0,0,0.75)",
+          "image": "/images/five.jpg",
+          "tintColor": "rgba(255,255,255,0.35)",
+          "value": "5",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.5)",
+          "image": "/images/eight.jpg",
+          "value": "8",
+        },
+        Object {
+          "color": "rgba(155, 255, 55, 0.6)",
+          "hideValue": true,
+          "image": "/images/thirteen.jpg",
+          "tintColor": "rgba(0,0,0,0.05)",
+          "value": "13",
+        },
+        Object {
+          "color": "rgb(49, 39, 94)",
+          "hideValue": true,
+          "image": "/images/twenty.jpg",
+          "tintColor": "rgba(0,0,0,0.15)",
+          "value": "20",
+        },
+        Object {
+          "color": "rgb(159, 39, 60)",
+          "hideValue": true,
+          "image": "/images/fourty.jpg",
+          "tintColor": "rgba(0,0,0,0.05)",
+          "value": "40",
+        },
+        Object {
+          "color": "rgb(200, 200, 200)",
+          "image": "/images/hundreed.jpg",
+          "tintColor": "rgba(0,0,0,0.5)",
+          "value": "100",
+        },
+        Object {
+          "color": "white",
+          "image": "/images/question.jpg",
+          "tintColor": "rgba(255,0,0,0.5)",
+          "value": "?",
+        },
+        Object {
+          "hideValue": true,
+          "image": "/images/coffee.jpg",
+          "tintColor": "rgba(0,0,0,0)",
+          "value": "☕️",
+        },
+      ]
+    }
+    hidden={true}
+    onIndexChange={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "activeIndex": 0,
+      "cards": Array [
+        Object {
+          "color": "rgb(134, 168, 178)",
+          "image": "/images/zero.jpg",
+          "tintColor": "rgba(0,0,0,0.05)",
+          "value": "0",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.6)",
+          "image": "/images/half.jpg",
+          "value": "0.5",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.6)",
+          "image": "/images/one.jpg",
+          "tintColor": "rgba(0,0,0,0.2)",
+          "value": "1",
+        },
+        Object {
+          "hideValue": true,
+          "image": "/images/two.jpg",
+          "tintColor": "rgba(0,0,0,0)",
+          "value": "2",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.5)",
+          "hideValue": true,
+          "image": "/images/three.jpg",
+          "tintColor": "rgba(0,0,0,0.35)",
+          "value": "3",
+        },
+        Object {
+          "color": "rgba(0,0,0,0.75)",
+          "image": "/images/five.jpg",
+          "tintColor": "rgba(255,255,255,0.35)",
+          "value": "5",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.5)",
+          "image": "/images/eight.jpg",
+          "value": "8",
+        },
+        Object {
+          "color": "rgba(155, 255, 55, 0.6)",
+          "hideValue": true,
+          "image": "/images/thirteen.jpg",
+          "tintColor": "rgba(0,0,0,0.05)",
+          "value": "13",
+        },
+        Object {
+          "color": "rgb(49, 39, 94)",
+          "hideValue": true,
+          "image": "/images/twenty.jpg",
+          "tintColor": "rgba(0,0,0,0.15)",
+          "value": "20",
+        },
+        Object {
+          "color": "rgb(159, 39, 60)",
+          "hideValue": true,
+          "image": "/images/fourty.jpg",
+          "tintColor": "rgba(0,0,0,0.05)",
+          "value": "40",
+        },
+        Object {
+          "color": "rgb(200, 200, 200)",
+          "image": "/images/hundreed.jpg",
+          "tintColor": "rgba(0,0,0,0.5)",
+          "value": "100",
+        },
+        Object {
+          "color": "white",
+          "image": "/images/question.jpg",
+          "tintColor": "rgba(255,0,0,0.5)",
+          "value": "?",
+        },
+        Object {
+          "hideValue": true,
+          "image": "/images/coffee.jpg",
+          "tintColor": "rgba(0,0,0,0)",
+          "value": "☕️",
+        },
+      ],
+      "hidden": true,
+      "onIndexChange": [Function],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": <div
+        class="pagination hidden"
+        style="z-index: 0;"
+      >
+        <button
+          class="paginationButton active"
+        >
+          0
+        </button>
+        <button
+          class="paginationButton"
+        >
+          0.5
+        </button>
+        <button
+          class="paginationButton"
+        >
+          1
+        </button>
+        <button
+          class="paginationButton"
+        >
+          2
+        </button>
+        <button
+          class="paginationButton"
+        >
+          3
+        </button>
+        <button
+          class="paginationButton"
+        >
+          5
+        </button>
+        <button
+          class="paginationButton"
+        >
+          8
+        </button>
+        <button
+          class="paginationButton"
+        >
+          13
+        </button>
+        <button
+          class="paginationButton"
+        >
+          20
+        </button>
+        <button
+          class="paginationButton"
+        >
+          40
+        </button>
+        <button
+          class="paginationButton"
+        >
+          100
+        </button>
+        <button
+          class="paginationButton"
+        >
+          ?
+        </button>
+        <button
+          class="paginationButton"
+        >
+          ☕️
+        </button>
+      </div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <button
+            className="paginationButton active"
+            onClick={[Function]}
+          >
+            0
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            0.5
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            1
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            2
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            3
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            5
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            8
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            13
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            20
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            40
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            100
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            ?
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            ☕️
+          </button>,
+        ],
+        "className": "pagination hidden",
+        "style": Object {
+          "zIndex": 0,
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <button
+            class="paginationButton active"
+          >
+            0
+          </button>,
+          "key": "btn-0",
+          "nodeType": "host",
+          "props": Object {
+            "children": "0",
+            "className": "paginationButton active",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "0",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            0.5
+          </button>,
+          "key": "btn-1",
+          "nodeType": "host",
+          "props": Object {
+            "children": "0.5",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "0.5",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            1
+          </button>,
+          "key": "btn-2",
+          "nodeType": "host",
+          "props": Object {
+            "children": "1",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "1",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            2
+          </button>,
+          "key": "btn-3",
+          "nodeType": "host",
+          "props": Object {
+            "children": "2",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "2",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            3
+          </button>,
+          "key": "btn-4",
+          "nodeType": "host",
+          "props": Object {
+            "children": "3",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "3",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            5
+          </button>,
+          "key": "btn-5",
+          "nodeType": "host",
+          "props": Object {
+            "children": "5",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "5",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            8
+          </button>,
+          "key": "btn-6",
+          "nodeType": "host",
+          "props": Object {
+            "children": "8",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "8",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            13
+          </button>,
+          "key": "btn-7",
+          "nodeType": "host",
+          "props": Object {
+            "children": "13",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "13",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            20
+          </button>,
+          "key": "btn-8",
+          "nodeType": "host",
+          "props": Object {
+            "children": "20",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "20",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            40
+          </button>,
+          "key": "btn-9",
+          "nodeType": "host",
+          "props": Object {
+            "children": "40",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "40",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            100
+          </button>,
+          "key": "btn-10",
+          "nodeType": "host",
+          "props": Object {
+            "children": "100",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "100",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            ?
+          </button>,
+          "key": "btn-11",
+          "nodeType": "host",
+          "props": Object {
+            "children": "?",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "?",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            ☕️
+          </button>,
+          "key": "btn-12",
+          "nodeType": "host",
+          "props": Object {
+            "children": "☕️",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "☕️",
+          ],
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "activeIndex": 0,
+        "cards": Array [
+          Object {
+            "color": "rgb(134, 168, 178)",
+            "image": "/images/zero.jpg",
+            "tintColor": "rgba(0,0,0,0.05)",
+            "value": "0",
+          },
+          Object {
+            "color": "rgba(255,255,255,0.6)",
+            "image": "/images/half.jpg",
+            "value": "0.5",
+          },
+          Object {
+            "color": "rgba(255,255,255,0.6)",
+            "image": "/images/one.jpg",
+            "tintColor": "rgba(0,0,0,0.2)",
+            "value": "1",
+          },
+          Object {
+            "hideValue": true,
+            "image": "/images/two.jpg",
+            "tintColor": "rgba(0,0,0,0)",
+            "value": "2",
+          },
+          Object {
+            "color": "rgba(255,255,255,0.5)",
+            "hideValue": true,
+            "image": "/images/three.jpg",
+            "tintColor": "rgba(0,0,0,0.35)",
+            "value": "3",
+          },
+          Object {
+            "color": "rgba(0,0,0,0.75)",
+            "image": "/images/five.jpg",
+            "tintColor": "rgba(255,255,255,0.35)",
+            "value": "5",
+          },
+          Object {
+            "color": "rgba(255,255,255,0.5)",
+            "image": "/images/eight.jpg",
+            "value": "8",
+          },
+          Object {
+            "color": "rgba(155, 255, 55, 0.6)",
+            "hideValue": true,
+            "image": "/images/thirteen.jpg",
+            "tintColor": "rgba(0,0,0,0.05)",
+            "value": "13",
+          },
+          Object {
+            "color": "rgb(49, 39, 94)",
+            "hideValue": true,
+            "image": "/images/twenty.jpg",
+            "tintColor": "rgba(0,0,0,0.15)",
+            "value": "20",
+          },
+          Object {
+            "color": "rgb(159, 39, 60)",
+            "hideValue": true,
+            "image": "/images/fourty.jpg",
+            "tintColor": "rgba(0,0,0,0.05)",
+            "value": "40",
+          },
+          Object {
+            "color": "rgb(200, 200, 200)",
+            "image": "/images/hundreed.jpg",
+            "tintColor": "rgba(0,0,0,0.5)",
+            "value": "100",
+          },
+          Object {
+            "color": "white",
+            "image": "/images/question.jpg",
+            "tintColor": "rgba(255,0,0,0.5)",
+            "value": "?",
+          },
+          Object {
+            "hideValue": true,
+            "image": "/images/coffee.jpg",
+            "tintColor": "rgba(0,0,0,0)",
+            "value": "☕️",
+          },
+        ],
+        "hidden": true,
+        "onIndexChange": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <div
+          class="pagination hidden"
+          style="z-index: 0;"
+        >
+          <button
+            class="paginationButton active"
+          >
+            0
+          </button>
+          <button
+            class="paginationButton"
+          >
+            0.5
+          </button>
+          <button
+            class="paginationButton"
+          >
+            1
+          </button>
+          <button
+            class="paginationButton"
+          >
+            2
+          </button>
+          <button
+            class="paginationButton"
+          >
+            3
+          </button>
+          <button
+            class="paginationButton"
+          >
+            5
+          </button>
+          <button
+            class="paginationButton"
+          >
+            8
+          </button>
+          <button
+            class="paginationButton"
+          >
+            13
+          </button>
+          <button
+            class="paginationButton"
+          >
+            20
+          </button>
+          <button
+            class="paginationButton"
+          >
+            40
+          </button>
+          <button
+            class="paginationButton"
+          >
+            100
+          </button>
+          <button
+            class="paginationButton"
+          >
+            ?
+          </button>
+          <button
+            class="paginationButton"
+          >
+            ☕️
+          </button>
+        </div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              className="paginationButton active"
+              onClick={[Function]}
+            >
+              0
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              0.5
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              1
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              2
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              3
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              5
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              8
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              13
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              20
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              40
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              100
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              ?
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              ☕️
+            </button>,
+          ],
+          "className": "pagination hidden",
+          "style": Object {
+            "zIndex": 0,
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <button
+              class="paginationButton active"
+            >
+              0
+            </button>,
+            "key": "btn-0",
+            "nodeType": "host",
+            "props": Object {
+              "children": "0",
+              "className": "paginationButton active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "0",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              0.5
+            </button>,
+            "key": "btn-1",
+            "nodeType": "host",
+            "props": Object {
+              "children": "0.5",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "0.5",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              1
+            </button>,
+            "key": "btn-2",
+            "nodeType": "host",
+            "props": Object {
+              "children": "1",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "1",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              2
+            </button>,
+            "key": "btn-3",
+            "nodeType": "host",
+            "props": Object {
+              "children": "2",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "2",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              3
+            </button>,
+            "key": "btn-4",
+            "nodeType": "host",
+            "props": Object {
+              "children": "3",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "3",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              5
+            </button>,
+            "key": "btn-5",
+            "nodeType": "host",
+            "props": Object {
+              "children": "5",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "5",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              8
+            </button>,
+            "key": "btn-6",
+            "nodeType": "host",
+            "props": Object {
+              "children": "8",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "8",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              13
+            </button>,
+            "key": "btn-7",
+            "nodeType": "host",
+            "props": Object {
+              "children": "13",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "13",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              20
+            </button>,
+            "key": "btn-8",
+            "nodeType": "host",
+            "props": Object {
+              "children": "20",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "20",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              40
+            </button>,
+            "key": "btn-9",
+            "nodeType": "host",
+            "props": Object {
+              "children": "40",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "40",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              100
+            </button>,
+            "key": "btn-10",
+            "nodeType": "host",
+            "props": Object {
+              "children": "100",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "100",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              ?
+            </button>,
+            "key": "btn-11",
+            "nodeType": "host",
+            "props": Object {
+              "children": "?",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "?",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              ☕️
+            </button>,
+            "key": "btn-12",
+            "nodeType": "host",
+            "props": Object {
+              "children": "☕️",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "☕️",
+            ],
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Pagination renders correctly with cards 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__unrendered__): <Pagination
+    activeIndex={0}
+    cards={
+      Array [
+        Object {
+          "color": "rgb(134, 168, 178)",
+          "image": "/images/zero.jpg",
+          "tintColor": "rgba(0,0,0,0.05)",
+          "value": "0",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.6)",
+          "image": "/images/half.jpg",
+          "value": "0.5",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.6)",
+          "image": "/images/one.jpg",
+          "tintColor": "rgba(0,0,0,0.2)",
+          "value": "1",
+        },
+        Object {
+          "hideValue": true,
+          "image": "/images/two.jpg",
+          "tintColor": "rgba(0,0,0,0)",
+          "value": "2",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.5)",
+          "hideValue": true,
+          "image": "/images/three.jpg",
+          "tintColor": "rgba(0,0,0,0.35)",
+          "value": "3",
+        },
+        Object {
+          "color": "rgba(0,0,0,0.75)",
+          "image": "/images/five.jpg",
+          "tintColor": "rgba(255,255,255,0.35)",
+          "value": "5",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.5)",
+          "image": "/images/eight.jpg",
+          "value": "8",
+        },
+        Object {
+          "color": "rgba(155, 255, 55, 0.6)",
+          "hideValue": true,
+          "image": "/images/thirteen.jpg",
+          "tintColor": "rgba(0,0,0,0.05)",
+          "value": "13",
+        },
+        Object {
+          "color": "rgb(49, 39, 94)",
+          "hideValue": true,
+          "image": "/images/twenty.jpg",
+          "tintColor": "rgba(0,0,0,0.15)",
+          "value": "20",
+        },
+        Object {
+          "color": "rgb(159, 39, 60)",
+          "hideValue": true,
+          "image": "/images/fourty.jpg",
+          "tintColor": "rgba(0,0,0,0.05)",
+          "value": "40",
+        },
+        Object {
+          "color": "rgb(200, 200, 200)",
+          "image": "/images/hundreed.jpg",
+          "tintColor": "rgba(0,0,0,0.5)",
+          "value": "100",
+        },
+        Object {
+          "color": "white",
+          "image": "/images/question.jpg",
+          "tintColor": "rgba(255,0,0,0.5)",
+          "value": "?",
+        },
+        Object {
+          "hideValue": true,
+          "image": "/images/coffee.jpg",
+          "tintColor": "rgba(0,0,0,0)",
+          "value": "☕️",
+        },
+      ]
+    }
+    onIndexChange={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "activeIndex": 0,
+      "cards": Array [
+        Object {
+          "color": "rgb(134, 168, 178)",
+          "image": "/images/zero.jpg",
+          "tintColor": "rgba(0,0,0,0.05)",
+          "value": "0",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.6)",
+          "image": "/images/half.jpg",
+          "value": "0.5",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.6)",
+          "image": "/images/one.jpg",
+          "tintColor": "rgba(0,0,0,0.2)",
+          "value": "1",
+        },
+        Object {
+          "hideValue": true,
+          "image": "/images/two.jpg",
+          "tintColor": "rgba(0,0,0,0)",
+          "value": "2",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.5)",
+          "hideValue": true,
+          "image": "/images/three.jpg",
+          "tintColor": "rgba(0,0,0,0.35)",
+          "value": "3",
+        },
+        Object {
+          "color": "rgba(0,0,0,0.75)",
+          "image": "/images/five.jpg",
+          "tintColor": "rgba(255,255,255,0.35)",
+          "value": "5",
+        },
+        Object {
+          "color": "rgba(255,255,255,0.5)",
+          "image": "/images/eight.jpg",
+          "value": "8",
+        },
+        Object {
+          "color": "rgba(155, 255, 55, 0.6)",
+          "hideValue": true,
+          "image": "/images/thirteen.jpg",
+          "tintColor": "rgba(0,0,0,0.05)",
+          "value": "13",
+        },
+        Object {
+          "color": "rgb(49, 39, 94)",
+          "hideValue": true,
+          "image": "/images/twenty.jpg",
+          "tintColor": "rgba(0,0,0,0.15)",
+          "value": "20",
+        },
+        Object {
+          "color": "rgb(159, 39, 60)",
+          "hideValue": true,
+          "image": "/images/fourty.jpg",
+          "tintColor": "rgba(0,0,0,0.05)",
+          "value": "40",
+        },
+        Object {
+          "color": "rgb(200, 200, 200)",
+          "image": "/images/hundreed.jpg",
+          "tintColor": "rgba(0,0,0,0.5)",
+          "value": "100",
+        },
+        Object {
+          "color": "white",
+          "image": "/images/question.jpg",
+          "tintColor": "rgba(255,0,0,0.5)",
+          "value": "?",
+        },
+        Object {
+          "hideValue": true,
+          "image": "/images/coffee.jpg",
+          "tintColor": "rgba(0,0,0,0)",
+          "value": "☕️",
+        },
+      ],
+      "onIndexChange": [Function],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": <div
+        class="pagination "
+      >
+        <button
+          class="paginationButton active"
+        >
+          0
+        </button>
+        <button
+          class="paginationButton"
+        >
+          0.5
+        </button>
+        <button
+          class="paginationButton"
+        >
+          1
+        </button>
+        <button
+          class="paginationButton"
+        >
+          2
+        </button>
+        <button
+          class="paginationButton"
+        >
+          3
+        </button>
+        <button
+          class="paginationButton"
+        >
+          5
+        </button>
+        <button
+          class="paginationButton"
+        >
+          8
+        </button>
+        <button
+          class="paginationButton"
+        >
+          13
+        </button>
+        <button
+          class="paginationButton"
+        >
+          20
+        </button>
+        <button
+          class="paginationButton"
+        >
+          40
+        </button>
+        <button
+          class="paginationButton"
+        >
+          100
+        </button>
+        <button
+          class="paginationButton"
+        >
+          ?
+        </button>
+        <button
+          class="paginationButton"
+        >
+          ☕️
+        </button>
+      </div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <button
+            className="paginationButton active"
+            onClick={[Function]}
+          >
+            0
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            0.5
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            1
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            2
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            3
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            5
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            8
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            13
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            20
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            40
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            100
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            ?
+          </button>,
+          <button
+            className="paginationButton"
+            onClick={[Function]}
+          >
+            ☕️
+          </button>,
+        ],
+        "className": "pagination ",
+        "style": Object {},
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <button
+            class="paginationButton active"
+          >
+            0
+          </button>,
+          "key": "btn-0",
+          "nodeType": "host",
+          "props": Object {
+            "children": "0",
+            "className": "paginationButton active",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "0",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            0.5
+          </button>,
+          "key": "btn-1",
+          "nodeType": "host",
+          "props": Object {
+            "children": "0.5",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "0.5",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            1
+          </button>,
+          "key": "btn-2",
+          "nodeType": "host",
+          "props": Object {
+            "children": "1",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "1",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            2
+          </button>,
+          "key": "btn-3",
+          "nodeType": "host",
+          "props": Object {
+            "children": "2",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "2",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            3
+          </button>,
+          "key": "btn-4",
+          "nodeType": "host",
+          "props": Object {
+            "children": "3",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "3",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            5
+          </button>,
+          "key": "btn-5",
+          "nodeType": "host",
+          "props": Object {
+            "children": "5",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "5",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            8
+          </button>,
+          "key": "btn-6",
+          "nodeType": "host",
+          "props": Object {
+            "children": "8",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "8",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            13
+          </button>,
+          "key": "btn-7",
+          "nodeType": "host",
+          "props": Object {
+            "children": "13",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "13",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            20
+          </button>,
+          "key": "btn-8",
+          "nodeType": "host",
+          "props": Object {
+            "children": "20",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "20",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            40
+          </button>,
+          "key": "btn-9",
+          "nodeType": "host",
+          "props": Object {
+            "children": "40",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "40",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            100
+          </button>,
+          "key": "btn-10",
+          "nodeType": "host",
+          "props": Object {
+            "children": "100",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "100",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            ?
+          </button>,
+          "key": "btn-11",
+          "nodeType": "host",
+          "props": Object {
+            "children": "?",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "?",
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": <button
+            class="paginationButton"
+          >
+            ☕️
+          </button>,
+          "key": "btn-12",
+          "nodeType": "host",
+          "props": Object {
+            "children": "☕️",
+            "className": "paginationButton",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "☕️",
+          ],
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "activeIndex": 0,
+        "cards": Array [
+          Object {
+            "color": "rgb(134, 168, 178)",
+            "image": "/images/zero.jpg",
+            "tintColor": "rgba(0,0,0,0.05)",
+            "value": "0",
+          },
+          Object {
+            "color": "rgba(255,255,255,0.6)",
+            "image": "/images/half.jpg",
+            "value": "0.5",
+          },
+          Object {
+            "color": "rgba(255,255,255,0.6)",
+            "image": "/images/one.jpg",
+            "tintColor": "rgba(0,0,0,0.2)",
+            "value": "1",
+          },
+          Object {
+            "hideValue": true,
+            "image": "/images/two.jpg",
+            "tintColor": "rgba(0,0,0,0)",
+            "value": "2",
+          },
+          Object {
+            "color": "rgba(255,255,255,0.5)",
+            "hideValue": true,
+            "image": "/images/three.jpg",
+            "tintColor": "rgba(0,0,0,0.35)",
+            "value": "3",
+          },
+          Object {
+            "color": "rgba(0,0,0,0.75)",
+            "image": "/images/five.jpg",
+            "tintColor": "rgba(255,255,255,0.35)",
+            "value": "5",
+          },
+          Object {
+            "color": "rgba(255,255,255,0.5)",
+            "image": "/images/eight.jpg",
+            "value": "8",
+          },
+          Object {
+            "color": "rgba(155, 255, 55, 0.6)",
+            "hideValue": true,
+            "image": "/images/thirteen.jpg",
+            "tintColor": "rgba(0,0,0,0.05)",
+            "value": "13",
+          },
+          Object {
+            "color": "rgb(49, 39, 94)",
+            "hideValue": true,
+            "image": "/images/twenty.jpg",
+            "tintColor": "rgba(0,0,0,0.15)",
+            "value": "20",
+          },
+          Object {
+            "color": "rgb(159, 39, 60)",
+            "hideValue": true,
+            "image": "/images/fourty.jpg",
+            "tintColor": "rgba(0,0,0,0.05)",
+            "value": "40",
+          },
+          Object {
+            "color": "rgb(200, 200, 200)",
+            "image": "/images/hundreed.jpg",
+            "tintColor": "rgba(0,0,0,0.5)",
+            "value": "100",
+          },
+          Object {
+            "color": "white",
+            "image": "/images/question.jpg",
+            "tintColor": "rgba(255,0,0,0.5)",
+            "value": "?",
+          },
+          Object {
+            "hideValue": true,
+            "image": "/images/coffee.jpg",
+            "tintColor": "rgba(0,0,0,0)",
+            "value": "☕️",
+          },
+        ],
+        "onIndexChange": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <div
+          class="pagination "
+        >
+          <button
+            class="paginationButton active"
+          >
+            0
+          </button>
+          <button
+            class="paginationButton"
+          >
+            0.5
+          </button>
+          <button
+            class="paginationButton"
+          >
+            1
+          </button>
+          <button
+            class="paginationButton"
+          >
+            2
+          </button>
+          <button
+            class="paginationButton"
+          >
+            3
+          </button>
+          <button
+            class="paginationButton"
+          >
+            5
+          </button>
+          <button
+            class="paginationButton"
+          >
+            8
+          </button>
+          <button
+            class="paginationButton"
+          >
+            13
+          </button>
+          <button
+            class="paginationButton"
+          >
+            20
+          </button>
+          <button
+            class="paginationButton"
+          >
+            40
+          </button>
+          <button
+            class="paginationButton"
+          >
+            100
+          </button>
+          <button
+            class="paginationButton"
+          >
+            ?
+          </button>
+          <button
+            class="paginationButton"
+          >
+            ☕️
+          </button>
+        </div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              className="paginationButton active"
+              onClick={[Function]}
+            >
+              0
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              0.5
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              1
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              2
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              3
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              5
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              8
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              13
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              20
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              40
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              100
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              ?
+            </button>,
+            <button
+              className="paginationButton"
+              onClick={[Function]}
+            >
+              ☕️
+            </button>,
+          ],
+          "className": "pagination ",
+          "style": Object {},
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <button
+              class="paginationButton active"
+            >
+              0
+            </button>,
+            "key": "btn-0",
+            "nodeType": "host",
+            "props": Object {
+              "children": "0",
+              "className": "paginationButton active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "0",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              0.5
+            </button>,
+            "key": "btn-1",
+            "nodeType": "host",
+            "props": Object {
+              "children": "0.5",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "0.5",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              1
+            </button>,
+            "key": "btn-2",
+            "nodeType": "host",
+            "props": Object {
+              "children": "1",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "1",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              2
+            </button>,
+            "key": "btn-3",
+            "nodeType": "host",
+            "props": Object {
+              "children": "2",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "2",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              3
+            </button>,
+            "key": "btn-4",
+            "nodeType": "host",
+            "props": Object {
+              "children": "3",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "3",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              5
+            </button>,
+            "key": "btn-5",
+            "nodeType": "host",
+            "props": Object {
+              "children": "5",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "5",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              8
+            </button>,
+            "key": "btn-6",
+            "nodeType": "host",
+            "props": Object {
+              "children": "8",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "8",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              13
+            </button>,
+            "key": "btn-7",
+            "nodeType": "host",
+            "props": Object {
+              "children": "13",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "13",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              20
+            </button>,
+            "key": "btn-8",
+            "nodeType": "host",
+            "props": Object {
+              "children": "20",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "20",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              40
+            </button>,
+            "key": "btn-9",
+            "nodeType": "host",
+            "props": Object {
+              "children": "40",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "40",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              100
+            </button>,
+            "key": "btn-10",
+            "nodeType": "host",
+            "props": Object {
+              "children": "100",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "100",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              ?
+            </button>,
+            "key": "btn-11",
+            "nodeType": "host",
+            "props": Object {
+              "children": "?",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "?",
+            ],
+            "type": "button",
+          },
+          Object {
+            "instance": <button
+              class="paginationButton"
+            >
+              ☕️
+            </button>,
+            "key": "btn-12",
+            "nodeType": "host",
+            "props": Object {
+              "children": "☕️",
+              "className": "paginationButton",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "☕️",
+            ],
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

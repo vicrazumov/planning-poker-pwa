@@ -6,7 +6,7 @@ import './Pagination.css'
 let activeTimer = null
 const ACTIVE_TIMEOUT = 2000
 
-const Pagination = ({ hidden, cards, onIndexChange, activeIndex, data }) => {
+const Pagination = ({ hidden, cards = [], onIndexChange, activeIndex, data }) => {
   const [active, setActive] = useState(true)
 
   const visible = active && !hidden
